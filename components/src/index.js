@@ -10,18 +10,22 @@ const App = () => {
     const comment3 = 'Having fun!!'; 
     return (
         <div className="ui conatiner comments">
-          <ApprovalCard></ApprovalCard>
+            <ApprovalCard>
             <CommentDetails author="Sam"  
             timeAgo = "Today at 4:45PM" 
             commentText={comment1} userImg={faker.image.avatar()} />
-
+            </ApprovalCard>
+            <ApprovalCard>
             <CommentDetails author="Alex"
              timeAgo = "Today at 7:15AM" 
              commentText={comment2} userImg={faker.image.avatar()}/>
-
+            </ApprovalCard>
+           
+            <ApprovalCard>
             <CommentDetails author="Jane"
              timeAgo = "Today at 2:00PM"
-              commentText={comment3} userImg={faker.image.avatar()}/>
+              commentText={comment3} userImg={faker.image.avatar()}/></ApprovalCard>   
+            
         </div>
     );
 };
