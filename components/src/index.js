@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import CommentDetails from './commentDetail'
 import faker from 'faker';
+import ApprovalCard from './ApprovalCard';
 
 const App = () => {
     const comment1 = 'Looks like a nice comment'; 
@@ -9,6 +10,7 @@ const App = () => {
     const comment3 = 'Having fun!!'; 
     return (
         <div className="ui conatiner comments">
+          <ApprovalCard></ApprovalCard>
             <CommentDetails author="Sam"  
             timeAgo = "Today at 4:45PM" 
             commentText={comment1} userImg={faker.image.avatar()} />
